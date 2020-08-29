@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://faviconka.ru/ico/faviconka_ru_299864.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Survey form
+    </title>
+</head>
+<body>
+    <video autoplay loop>
+        <source src="img/Mall.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    
+    <!-- Container -->
+    <div class="container-form">
+
+        <!-- Title -->
+        <h1 id="title">FOODstore survey form</h1>
+
+        <!-- description -->
+        <p id="description">Thank you for taking the time to help us improve our service</p>
+
+        <!-- FORM -->
+        <form id="survey-form">
+
+            <!-- Name input -->
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            
+            <!-- Surname input -->
+            <label for="surname" id="surname-label">Surname (optional)</label>
+            <input type="text" name="surname" id="surname" placeholder="Enter your surname">
+
+            <!-- Email input -->
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <!-- Age input -->
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" id="number" name="amount" min="18" max="199" placeholder="Enter your age" required>
+
+            <!-- Country input -->
+            <label for="country" id="country-label">Country (optional)</label>
+            <input type="text" id="country" placeholder="Enter your country">
+
+            <!-- City/Town input -->
+            <label for="city" id="city-label">City/Town (optional)</label>
+            <input type="text" id="city" placeholder="Enter your city/town">
+
+            <!-- Address input -->
+            <label for="address" id="address-label">Address (optional)</label>
+            <input type="text" id="address" placeholder="Enter your address">
+
+            <!-- Phone input -->
+            <label for="phone" id="phone-label">Phone number (optional)</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+
+            <!-- Gender -->
+            <div id="gender">
+                <p class="gender">Please select your gender</p>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other</label>
+            </div>
+
+            <!-- Current role options -->
+            <label for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" required>
+                    <option disabled selected value>select current role</option>
+                    <option value="student">Student</option>
+                    <option value="fullTimeJob">Full Time Job</option>
+                    <option value="fullTimeLearner">Full Time Learner</option>
+                    <option value="preferNotToSay">Prefer Not To Say</option>
+                    <option value="other">Other</option>
+                </select> 
+
+            <!-- Will you recommend -->
+            <div id="recommend">
+                <p class="recommend">Would you recommend FOODstore to a friend?</p>
+                    <input type="radio" id="definitely" name="recommend">
+                    <label for="definitely">Definitely</label>
+                    <input type="radio" id="maybe" name="recommend">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="notSure" name="recommend">
+                    <label for="notSure">Not sure</label>
+            </div>
+
+            <!-- Features -->
+            <label for="feature-dropdown">What is your favorite feature of FOODstore</label>
+            <select id="feature-dropdown" required>
+                <option disabled selected value>select an option</option>
+                <option value="service">Service</option>
+                <option value="wideRange">Wide Range</option>
+                <option value="price">Price</option>
+                <option value="quality">Quality</option>
+                <option value="other">Other</option>
+            </select> 
+
+            <!-- goods -->
+            <div id="goods">
+                <p class="goods">What kind of goods do you buy often in our store</p>
+                    <input type="checkbox" id="fruits" name="fruits" value="Fruits">
+                    <label for="fruits"> Fruits</label>
+                    <input type="checkbox" id="vegetables" name="vegetables" value="Vegetables">
+                    <label for="vegetables">Vegetables</label>
+                    <input type="checkbox" id="meat" name="meat" value="Meat">
+                    <label for="meat">Meat</label>
+                    <input type="checkbox" id="fish" name="fish" value="Fish">
+                    <label for="fish">Fish</label>
+                    <input type="checkbox" id="alcohol" name="alcohol" value="Alcohol">
+                    <label for="alcohol">Alcohol</label>
+                    <input type="checkbox" id="cereals" name="cereals" value="Cereals">
+                    <label for="cereals">Cereals</label>
+                    <input type="checkbox" id="sweets" name="sweets" value="Sweets">
+                    <label for="sweets">Sweets</label>
+                    <input type="checkbox" id="bread" name="bread" value="Bread">
+                    <label for="bread">Bread</label>
+                    <input type="checkbox" id="water" name="water" value="Water">
+                    <label for="water">Water</label>
+                    <input type="checkbox" id="dairy" name="dairy" value="Dairy">
+                    <label for="dairy">Dairy</label>
+                    <input type="checkbox" id="clothing" name="clothing" value="Clothing">
+                    <label for="clothing">Clothing</label>
+            </div>
+
+            <!-- price -->
+            <div id="price">
+                <p class="price">Check out our prices</p>
+                    <input type="radio" id="expensive" name="price">
+                    <label for="expensive">Expensive</label>
+                    <input type="radio" id="fine" name="price">
+                    <label for="fine">Fine</label>
+                    <input type="radio" id="available" name="price">
+                    <label for="available">Available</label>
+            </div>
+
+            <!-- Customer service -->
+            <div id="service">
+                <p class="service">How would you describe customer service?</p>
+                    <input type="radio" id="bad" name="service">
+                    <label for="bad">Bad</label>
+                    <input type="radio" id="good" name="service">
+                    <label for="good">Good</label>
+                    <input type="radio" id="excellent" name="service">
+                    <label for="excellent">Excellent</label>
+            </div>
+
+            <!-- Comments -->
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="comments"placeholder="your comments"></textarea>
+
+            <!-- Submit -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

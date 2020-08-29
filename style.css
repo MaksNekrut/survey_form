@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #ffcdb2;
+}
+
+video{
+    position:fixed;
+    z-index:-10;
+    min-width:100%;
+    min-height:100%;
+    overflow:hidden;
+}
+
+.overlay {
+    position:fixed;
+    z-index:-1;
+    min-width:100%;
+    min-height:100%;
+    overflow:hidden; 
+    background: rgba(255,255,255,0.5);
+}
+
+#title {
+    font-family: 'Londrina Solid';
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#description {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.container-form {
+    z-index: 1;
+    margin: 0 auto;
+    padding: 3rem 0 3rem 0;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background: #006d77;
+    opacity: 90%;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label,
+label[for="dropdown"],
+label[for="feature-dropdown"],
+label[for="comments"] {
+    margin-left: 15%;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    max-width: 70%;
+    font-size: 1.2rem;
+}
+
+input,
+#dropdown,
+#feature-dropdown {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    height: 2.4rem;
+    padding-left: 1rem;
+    background-color:#edf6f9;
+    border:none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input:focus,
+#dropdown:focus,
+#feature-dropdown:focus,
+#comments:focus {
+    outline: 0;
+    outline-offset: 0;
+    filter: sepia(50%);
+}
+
+input:hover:not([type="radio"]):not([type="checkbox"]),
+#dropdown:hover,
+#feature-dropdown:hover,
+#comments:hover,
+#submit:hover {
+    box-shadow: 0 5px 15px #02c39a;
+}
+
+#comments {
+    max-width: 70%;
+    min-width: 70%;
+    min-height: 8rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    outline: 0;
+    outline-offset: 0;
+    border:none;
+    border-radius: 0.3rem;
+}
+
+#comments::placeholder{
+    font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: 300;
+    color: #343a40;
+}
+
+#gender,
+#recommend,
+#goods,
+#price,
+#service {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.gender,
+.recommend,
+.goods,
+.price,
+.service {
+    margin-left: 15%;
+    font-weight: 700;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 1.2rem;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    margin-bottom: 0.4rem;
+    margin-left: 12%;
+}
+
+label[for="male"],
+label[for="female"],
+label[for="other"],
+label[for="definitely"],
+label[for="maybe"],
+label[for="notSure"], 
+label[for="fruits"],
+label[for="vegetables"],
+label[for="meat"],
+label[for="fish"],
+label[for="alcohol"],
+label[for="cereals"],
+label[for="sweets"],
+label[for="bread"],
+label[for="water"],
+label[for="dairy"],
+label[for="clothing"],
+label[for="expensive"],
+label[for="fine"],
+label[for="available"],
+label[for="bad"],
+label[for="good"],
+label[for="excellent"] {
+    margin: 0;
+    min-width: 75%;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+}
+
+option {
+font-size: 1rem;
+padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+background-color: #83c5be;
+}
+
+#submit {
+    width: 25%;
+    height: 2.4rem;
+    margin: 0 auto;
+    background-color: #83c5be;
+    color: #006d77;
+    font-size: 1.2rem;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: #ffffff;
+}
+
+@media only screen and (max-width : 360px) {
+    * {
+        font-size: 0.8rem;
+    }
+
+    #title {
+        font-size: 1.2rem;
+    }
+#description {
+    font-size: 0.95rem;
+    max-width: 95%;
+    }
+} 
